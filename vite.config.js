@@ -9,5 +9,4 @@ export default defineConfig({
     vue(), 
     tailwindcss(),
 ],
- base: '/Aimen-portfolio/', // yahan apna repo ka naam likho
 })
