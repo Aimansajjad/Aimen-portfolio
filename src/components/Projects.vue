@@ -8,7 +8,7 @@ import 'swiper/css/bundle'
 
 // thumnail Images
 import lbc from '../assets/image/LBC.png'
-import clinicwebsite from '../assets/image/Clinicwebsite.png'
+import clinicwebsite from '../assets/image/ClinicWebsite.png'
 import gbpaving from '../assets/image/gbPaving.png'
 import newsletter from '../assets/image/newsletter.png'
 import Screen4 from '../assets/image/screen1 (4).png'
