@@ -22,7 +22,8 @@ onMounted(async () => {
   setTimeout(() => {
     AOS.refreshHard()
   }, 400)
-})
+});
+
 </script>
 
 <template>
@@ -62,7 +63,7 @@ onMounted(async () => {
         </svg> -->
       </div>
       <h3 class="font-bold">WEBSITE</h3>
-      <a href="https://swiperjs.com/demos/" target="_blank"><p>www.aimansajjad.com</p></a>
+      <a href="aimen-portfolio-bohj.vercel.app" target="_blank"><p>aimen-portfolio-bohj.vercel.app</p></a>
       
     </div>
 
