@@ -107,7 +107,7 @@ onMounted(() => {
 
       <div class="container mx-auto pt-3">
         <span class=" text-lg">
-           <a href="mailto:aimansajjad200@gmail.com" target="_blank" class="text-yellow-400 hover:underline">
+           <a href="mailto:aimansajjad200@gmail.com" target="_blank" class="text-yellow-400 hover:underline break-words">
           aimansajjad200@gmail.com
         </a>
         </span>
@@ -115,7 +115,7 @@ onMounted(() => {
 
       <div class="container mx-auto pt-3">
         <span class=" text-lg">
-          <a href="https://www.linkedin.com/in/aiman-sajjad-aa5544251/" target="_blank" class="text-yellow-400 hover:underline">
+          <a href="https://www.linkedin.com/in/aiman-sajjad-aa5544251/" target="_blank" class="text-yellow-400 hover:underline break-words">
           linkedin.com/in/aiman-sajjad
         </a>
         </span>
