@@ -63,7 +63,7 @@ onMounted(async () => {
         </svg> -->
       </div>
       <h3 class="font-bold">WEBSITE</h3>
-      <a href="aimen-portfolio-bohj.vercel.app" target="_blank"><p>aimen-portfolio-bohj.vercel.app</p></a>
+      <a href="https://aimen-portfolio-bohj.vercel.app" target="_blank"><p>aimen-portfolio-bohj.vercel.app</p></a>
       
     </div>
 
