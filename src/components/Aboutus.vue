@@ -98,15 +98,15 @@ onMounted(() => {
           <div class="flex-initial text-white p-6 ">
 
             <div class="container mx-auto">
-        <span class=" text-sm sm:text-base md:text-lg lg:text-xl text-gray-300">Aimen Sajjad</span>
+        <span class="text-lg text-gray-300">Aimen Sajjad</span>
       </div>
 
       <div class="container mx-auto pt-3">
-        <span class=" text-sm sm:text-base md:text-lg lg:text-xl text-gray-300">Available</span>
+        <span class="text-lg text-gray-300">Available</span>
       </div>
 
       <div class="container mx-auto pt-3">
-        <span class=" text-sm sm:text-base md:text-lg lg:text-xl">
+        <span class=" text-lg">
            <a href="mailto:aimansajjad200@gmail.com" target="_blank" class="text-yellow-400 hover:underline">
           aimansajjad200@gmail.com
         </a>
@@ -114,7 +114,7 @@ onMounted(() => {
       </div>
 
       <div class="container mx-auto pt-3">
-        <span class=" text-sm sm:text-base md:text-lg lg:text-xl">
+        <span class=" text-lg">
           <a href="https://www.linkedin.com/in/aiman-sajjad-aa5544251/" target="_blank" class="text-yellow-400 hover:underline">
           linkedin.com/in/aiman-sajjad
         </a>
