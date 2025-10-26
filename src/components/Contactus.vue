@@ -32,7 +32,7 @@ onMounted(async () => {
         <section class=" w-full bg-black pt-6">
 
              <div class="w-full text-center bg-black " data-aos="fade-up"  data-aos-delay="200">
-                <p class="text-gray-300 pb-7 italic text-lg">
+                <p class="text-gray-300 pb-7 italic text-lg w-full max-w-screen-lg mx-auto px-4">
                     Have something in mind? I’m available for
                      freelance work, team projects, or creative discussions.
                 </p>

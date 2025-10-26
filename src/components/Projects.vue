@@ -166,7 +166,7 @@ function showPopup(image) {
             <section class="w-full bg-black text-white pt-10">
 
                   <div class="w-full text-center bg-black">
-                <p class="text-gray-300 pb-7 italic text-lg" data-aos="fade-up">
+                <p class="text-gray-300 pb-7 italic text-lg w-full max-w-screen-lg mx-auto px-4" data-aos="fade-up">
                     Explore a selection of projects from my portfolio that showcase my skills,
                      creativity, and hands-on experience.
                 </p>

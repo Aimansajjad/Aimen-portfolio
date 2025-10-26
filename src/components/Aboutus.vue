@@ -91,48 +91,41 @@ onMounted(() => {
         <!-- <div class="container mx-auto pt-3">
         <span class="font-semibold text-lg">Phone:</span>
       </div> -->
+          </div><!--flex1-->
 
-
-          </div>
 <!-- flex2 -->
-          <div class="flex-initial text-white p-6 ">
+          <div class="flex-initial text-white p-6">
 
-            <div class="container mx-auto">
-        <span class="text-lg text-gray-300">Aimen Sajjad</span>
-      </div>
+  <div class="w-full mx-auto">
+    <span class="font-semibold text-lg">Aimen Sajjad</span>
+  </div>
 
-      <div class="container mx-auto pt-3">
-        <span class="text-lg text-gray-300">Available</span>
-      </div>
+  <div class="w-full mx-auto pt-3">
+    <span class="font-semibold text-lg">Available</span>
+  </div>
 
-      <div class="container mx-auto pt-3">
-        <span class=" text-lg">
-           <a href="mailto:aimansajjad200@gmail.com" target="_blank" class="text-yellow-400 hover:underline break-words">
-          aimansajjad200@gmail.com
-        </a>
-        </span>
-      </div>
+  <div class="w-full mx-auto pt-3">
+    <span class="font-semibold text-lg">
+      <a href="mailto:aimansajjad200@gmail.com" 
+         target="_blank" 
+         class="text-yellow-400 hover:underline break-all">
+         aimansajjad200@gmail.com
+      </a>
+    </span>
+  </div>
 
-      <div class="container mx-auto pt-3">
-        <span class=" text-lg">
-          <a href="https://www.linkedin.com/in/aiman-sajjad-aa5544251/" target="_blank" class="text-yellow-400 hover:underline break-words">
-          linkedin.com/in/aiman-sajjad
-        </a>
-        </span>
-      </div>
+  <div class="w-full mx-auto pt-3">
+    <span class="font-semibold text-lg">
+      <a href="https://www.linkedin.com/in/aiman-sajjad-aa5544251/" 
+         target="_blank" 
+         class="text-yellow-400 hover:underline break-all">
+         linkedin.com/in/aiman-sajjad
+      </a>
+    </span>
+  </div>
 
-      <!-- <div class="container mx-auto pt-3">
-        <span class=" text-lg">
-          <a
-    href="tel:03115980043"
-    class="text-yellow-400 hover:underline" >
-    03115980043
-  </a>
-        </span>
-      </div> -->
-
-
-          </div>
+</div>
+<!--flex2-->
 
         </div>
 

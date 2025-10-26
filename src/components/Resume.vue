@@ -15,7 +15,7 @@ defineProps({
 
           
           <div class="w-full text-center bg-black" data-aos="fade-up">
-                <p class="text-gray-300 pb-6 italic text-lg">
+                <p class="text-gray-300 pb-6 italic text-lg w-full max-w-screen-lg mx-auto px-4">
                   My resume highlights the skills, and experience I bring to 
                   every project — clear, focused, and ready for the next challenge
                 </p>
