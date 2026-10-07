@@ -173,7 +173,7 @@ function showPopup(image) {
         </div>
 
 
-                <div class="container mx-auto pt-6">
+                <div class="container mx-auto pt-6 ">
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-9 space-y-3">
 
@@ -183,8 +183,8 @@ function showPopup(image) {
 
                              <!-- Overlay -->
                               <div class="absolute inset-0 bg-yellow-500/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                <h1 class="text-white text-xl font-bold text-center px-4 font-poppins">{{ image.alt }}</h1>
-                                <svg @click="showPopup(image)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 cursor-pointer" >
+                                <h1 class="text-white text-xl font-bold text-center px-4 font-poppins transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-1000 delay-200 border">{{ image.alt }}</h1>
+                                <svg @click="showPopup(image)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 cursor-pointer transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-800 delay-200" >
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6" />
                                 </svg>
 

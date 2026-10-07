@@ -5,6 +5,13 @@
   --font-poppins: "Poppins", sans-serif; 
 }
 
+<<<<<<< HEAD
+=======
+html {
+  scroll-behavior: smooth;
+}
+
+>>>>>>> 68ee8d1 (Update website)
 
 /*
 :root {

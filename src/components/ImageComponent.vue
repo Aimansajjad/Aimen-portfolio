@@ -14,8 +14,4 @@ defineProps({
 
         <img :src="imgsrc" alt="Model" :class="className" />
 
-        
-        
-
-      
 </template>

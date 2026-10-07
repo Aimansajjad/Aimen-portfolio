@@ -1,6 +1,6 @@
 
 <script setup>
-import { ref } from 'vue'
+import { ref} from 'vue'
 import ImageComponent from './ImageComponent.vue';
 import NameHeading from './NameHeading.vue';
 import MainimageSrc from '../assets/image/aboutusimg-removebg-preview (1).png'; // Image import
@@ -27,19 +27,37 @@ const onAutoplayTimeLeft = (swiper, time, progress) => {
 const modules = [Autoplay, Pagination, Navigation]
 
 defineProps({
-  home: String,
-  about: String,
-  resume: String,
-  skills: String,
-  projects: String,
-  contact: String
+  Home: String,
+  About: String,
+  Resume: String,
+  Skills: String,
+  Projects: String,
+  Contact: String
 });
+
+// import {  } from 'vue'
+// import ScrollReveal from 'scrollreveal'
+
+// onMounted(() => {
+//   ScrollReveal().reveal('.reveal-up', {
+//     origin: 'bottom',
+//     distance: '40px',
+//     duration: 800,
+//     delay: 100,
+//     opacity: 0,
+//     reset: true, // 👈 required for fade again on scroll up
+//     easing: 'ease-in-out',
+//     interval: 100 // 👈 For staggered animation if multiple elements
+//   });
+// });
+
 
 </script>
 
 <template>
   
 <section class="w-full" >
+
 <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 fixed top-0 left-0 w-full z-50" style="background-color: #101010;">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
@@ -58,22 +76,22 @@ defineProps({
 
       <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700" style="background-color: #101010;">
         <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-white bg-yellow-700 rounded-sm md:bg-transparent md:text-yellow-700 md:dark:text-yellow-500 dark:bg-yellow-600 md:dark:bg-transparent" aria-current="page">{{home}}</a>
+          <a href="#home" class=" block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent" :aria-current="activeSection === 'home' ? 'page' : null">Home</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">{{about}}</a>
+          <a href="#about" class=" block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">{{resume}}</a>
+          <a href="#resume" class=" block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">Resume</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">{{skills}}</a>
+          <a href="#skills"  class=" block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
         </li>
          <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">{{projects}}</a>
+          <a href="#projects"  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
         </li>
          <li>
-          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">{{contact}}</a>
+          <a href="#contact"  class=" block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-yellow-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-yellow-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
         </li>
       </ul>
     </div>
@@ -109,7 +127,7 @@ defineProps({
       <!-- Left Column -->
       <div class="bg-black">
          <!-- Left content -->
-     <div class="container mx-auto pt-10 md:pt-[15rem] pl-6" data-aos="fade-up">
+     <div class="container mx-auto pt-10 md:pt-[15rem] pl-10 reveal-up">
         <NameHeading hello="Hello!" iam="I'm" name="Aiman Sajjad" developer="Frontend Web Developer"/>
       </div>
       </div>
@@ -131,7 +149,7 @@ defineProps({
       <!-- Left Column -->
       <div class="bg-black">
          <!-- Left content -->
-     <div class="container mx-auto pt-10 md:pt-[15rem] pl-6" data-aos="fade-up">
+     <div class="container mx-auto pt-10 md:pt-[15rem] pl-10">
         <NameHeading hello="Hello, There!" iam="I'm" name="Web Designer" developer="Available for freelance work" connect="Let’s connect!"/>
       </div>
       </div>
@@ -164,6 +182,12 @@ defineProps({
 </template>
 
 <style scoped>
+
+.custom-active {
+  color: #facc15;
+  font-weight: bold;
+}
+
 .swiper {
   width: 100%;
   height: 100%;

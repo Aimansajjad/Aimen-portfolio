@@ -7,29 +7,104 @@ import Skills from '../components/Skills.vue';
 import Projects from '../components/Projects.vue';
 import Contactus from '../components/Contactus.vue';
 
+import { onMounted } from 'vue'
+import ScrollReveal from 'scrollreveal'
 
-defineProps({
-   
+// const sr = ScrollReveal({
+//   origin: 'bottom',
+//   distance: '40px',
+//   duration: 800,
+//   delay: 100,
+//   opacity: 0,
+//   reset: false,
+//   easing: 'ease-in-out',
+//   interval: 100,
+//   viewFactor: 0.1
+// });
+
+// const handleNavClick = (sectionId) => {
+//   const sectionElement = document.querySelector(`#${sectionId}`);
+//   if (sectionElement) {
+//     // Immediately reveal the section
+//     sr.reveal(sectionElement.querySelectorAll('.reveal-up'), {
+//       delay: 0,
+//       duration: 600
+//     });
+//   }
+// };
+
+// Reference to track the target section
+const targetSection = ref(null);
+
+// ScrollReveal configuration
+const sr = ScrollReveal({
+   origin: 'bottom',
+  distance: '50px', // mobile ke liye kam rakha
+  duration: 700,
+  delay: 100,
+  opacity: 0,
+  reset: false, // dobara repeat na ho — flicker kam hoga
+  easing: 'ease-in-out',
+  interval: 100,
+  viewFactor: 0.2 // element ka 20% viewport me aayega to trigger
 });
+
+onMounted(() => {
+  // Apply ScrollReveal to all elements with .reveal-up class
+  sr.reveal('.reveal-up');
+
+  // Listen to scroll-spy events to detect navigation link clicks
+  window.addEventListener('scrollSpy:navigate', (event) => {
+    const sectionId = event.detail.id; // Get the target section ID
+    const sectionElement = sectionId ? document.querySelector(`#${sectionId}`) : null;
+
+    if (sectionElement) {
+      // Immediately reveal the section and its children with .reveal-up class
+      sr.reveal(sectionElement.querySelectorAll('.reveal-up'), {
+        delay: 0, // No delay for immediate animation
+        duration: 600 // Slightly faster for instant feel
+      });
+    }
+  });
+});
+
+
 </script>
 
 <template>
 
+      <div v-scroll-spy>
+        
+    <section id="home" >
+      <HeaderComponent/>
+    </section>
 
-  <HeaderComponent home="Home" about="About" resume="Resume" skills="Skills" projects="Projects" contact="Contact"></HeaderComponent>
+    <section id="about">
+      <Aboutus/>  <!--components ko call krna hai -->
+    </section>
 
-  <Aboutus/>
+    <section id="resume">
+      <Resume/>
+    </section>
 
-  <Resume/>
+    <section id="skills">
+      <Skills/>
+    </section>
 
-  <Skills/>
+    <section id="projects">
+      <Projects/>
+    </section>
 
-  <Projects/>
+    <section id="contact">
+      <Contactus/>
+    </section>
+  </div>
 
-  <Contactus/>
 
 </template>
 
 <style scoped>
+
+
 
 </style>
